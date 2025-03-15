@@ -21,8 +21,20 @@
             <label for="email">Email: </label>
             <input type="email" name="email" id="email" required>
 
-            <input type="submit" value="Enviar">
+            <label for="estado">Estado: </label>
+            <select name="estado" id="estado">
+                <option value="PR">Parana</option>
+                <option value="MT">Mato Grosso</option>
+            </select>
 
+            <label for="cidade">Cidade: </label>
+            <input list="cidades">
+            <datalist id="cidades">
+                <option value="Itambé">Itambé</option>
+                <option value="Itanhanga">Itanhanga</option>
+            </datalist>
+            
+            <input type="submit" value="Enviar">
 
         </form>
     </div>
